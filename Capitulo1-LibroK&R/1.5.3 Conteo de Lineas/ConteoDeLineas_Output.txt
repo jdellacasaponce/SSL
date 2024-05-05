@@ -1,1 +1,3 @@
-3
+La cantidad de líneas en el documento son: 3
+La cantidad de tabulaciones en el documento son: 3
+La cantidad de espacios en el documento son: 11
