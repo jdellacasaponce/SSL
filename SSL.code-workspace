@@ -4,8 +4,12 @@
 			"path": "00-CHelloWorld"
 		},
 		{
-			"path": "Ejercicio1-LibroK&R"
+			"path": "Capitulo1-LibroK&R"
 		}
 	],
-	"settings": {}
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
 }
