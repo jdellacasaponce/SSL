@@ -12,3 +12,5 @@ a
  La expresión "getchar() != EOF" es igual a: 1
 n
  La expresión "getchar() != EOF" es igual a: 0
+
+ El Valor de EOF es: -1
