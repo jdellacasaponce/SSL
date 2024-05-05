@@ -18,4 +18,6 @@ int main()
     }
 
     printf("\n La expresión \"getchar() != EOF\" es igual a: %d\n", verificacion);
+    
+    printf("\n El Valor de EOF es: %d\n", c);
 }
