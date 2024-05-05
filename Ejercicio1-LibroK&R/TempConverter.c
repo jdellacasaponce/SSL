@@ -16,10 +16,10 @@ int main ()
     printf("%3s %6s\n", "Celsius", "Farenheit");
 
     //Imprimo tabla de conversión de grados Celsius a grados Farenheit
-    celsius = lower;
-    while (celsius <= upper) {
+    celsius = upper;
+    while (celsius >= lower) {
         fahr =  celsius * (9.0/5.0) + 32.0;
-        printf("%3.0f %6.1f\n", celsius, fahr);
-        celsius = celsius + step;
+        printf("%4.0f %9.0f\n", celsius, fahr);
+        celsius = celsius - step;
     }
 }
