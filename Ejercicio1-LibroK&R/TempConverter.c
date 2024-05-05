@@ -12,6 +12,10 @@ main ()
     upper = 300;        /* límite superior */
     step = 20;          /* tamaño del incremento */ 
 
+    //Imprimo encabezados
+    printf("%3s %6s\n", "Celsius", "Farenheit");
+
+    //Imprimo tabla
     fahr = lower;
     while (fahr <= upper) {
         celsius = (5.0/9.0) * (fahr - 32.0);
