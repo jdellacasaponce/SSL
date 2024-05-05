@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "00-CHelloWorld"
+		},
+		{
+			"path": "Ejercicio1-LibroK&R"
 		}
 	],
 	"settings": {}
