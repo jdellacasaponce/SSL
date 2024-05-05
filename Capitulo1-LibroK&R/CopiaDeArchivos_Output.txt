@@ -1,0 +1,14 @@
+
+ La expresión "getchar() != EOF" es igual a: 1
+j
+ La expresión "getchar() != EOF" es igual a: 1
+u
+ La expresión "getchar() != EOF" es igual a: 1
+l
+ La expresión "getchar() != EOF" es igual a: 1
+i
+ La expresión "getchar() != EOF" es igual a: 1
+a
+ La expresión "getchar() != EOF" es igual a: 1
+n
+ La expresión "getchar() != EOF" es igual a: 0
