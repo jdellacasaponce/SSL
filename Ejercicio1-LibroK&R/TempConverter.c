@@ -9,17 +9,17 @@ main ()
     int lower, upper, step;
 
     lower = 0;          /* límite inferior de la tabla de temperaturas */
-    upper = 300;        /* límite superior */
-    step = 20;          /* tamaño del incremento */ 
+    upper = 45;        /* límite superior */
+    step = 5;          /* tamaño del incremento */ 
 
     //Imprimo encabezados
     printf("%3s %6s\n", "Celsius", "Farenheit");
 
-    //Imprimo tabla
-    fahr = lower;
-    while (fahr <= upper) {
-        celsius = (5.0/9.0) * (fahr - 32.0);
-        printf("%3.0f %6.1f\n", fahr, celsius);
-        fahr = fahr + step;
+    //Imprimo tabla de conversión de grados Celsius a grados Farenheit
+    celsius = lower;
+    while (celsius <= upper) {
+        fahr =  celsius * (9.0/5.0) + 32.0;
+        printf("%3.0f %6.1f\n", celsius, fahr);
+        celsius = celsius + step;
     }
 }
