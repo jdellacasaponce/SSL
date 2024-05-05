@@ -3,7 +3,7 @@
 /*imprime la tabla Fahrenheut-Celsius
     para fahr= 0, 20, ...., 300; version de punto flotante */
 
-main () 
+int main () 
 {
     float fahr, celsius;
     int lower, upper, step;
