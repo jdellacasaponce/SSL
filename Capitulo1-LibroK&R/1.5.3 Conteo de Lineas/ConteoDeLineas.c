@@ -9,30 +9,32 @@
 
 int main() 
 {
-    //Declaro variables para caracter, nueva linea, tabulaciones y espacios en blanco.
-    int c, nl, tab, space;
+    //Declaro variables
+    int c, aux;
 
-    //Inicializo variables en 0
-    nl = tab = space = 0;
+    //Imprimo la primera variable si no es un espacio, o si no es un archivo vacío.
+    if ( (c = getchar()) != ' ' && c != EOF) {
+        putchar(c);
+    }
+
+    //Para evitar escribir dos espacios vacíos seguidos, la variable auxiliar almacena el caracter anterior.
+    aux = c;
 
     //Recorro el texto con un while y voy leyendo los caracteres.
     while((c = getchar()) != EOF) {
-
-        //Si es una nueva linea, la agrego al contador nueva linea (nl)
-        if (c == '\n')      
-                ++nl;
-
-        //Si es una tabulación, la agrego en el contador tab.
-        if (c == '\t')      
-                ++tab;
         
-        //Si es un espacio en blanco, lo agrego al contador space.
-        if (c == ' ')      
-                ++space;
-    }
+        //si el caracter anterior es un espacio y el caracter actual no lo es, imprime el espacio y el caracter
+        if ( c != ' ' && aux == ' ') {
 
-    //Imprimo la salida, comentando el resultado de cada contador:
-    printf("La cantidad de líneas en el documento son: %d\n", nl);
-    printf("La cantidad de tabulaciones en el documento son: %d\n", tab);
-    printf("La cantidad de espacios en el documento son: %d\n", space);
+            putchar(aux);
+            putchar(c);
+        }
+
+        //si el caracter anterior anterior no es un espacio, solo imprime el caracter actual
+        if ( c != ' ' && aux != ' ') {
+            putchar(c);
+        }
+        
+        aux = c;    
+    }
 }
