@@ -1,3 +1,4 @@
-Julian Dellacasa ponce
-	Alumno de K2052
-		Asignatura de Sintaxis y Semantica de los lenguajes
+\tJulian Dellacasa \\Ponce \b 
+ \t\tAlumno de \\K2052\\ \b 
+ \tAsignatura\tSintaxis y Semantica \\ De Los\b Lenguajes
+

@@ -10,31 +10,33 @@
 int main() 
 {
     //Declaro variables
-    int c, aux;
-
-    //Imprimo la primera variable si no es un espacio, o si no es un archivo vacío.
-    if ( (c = getchar()) != ' ' && c != EOF) {
-        putchar(c);
-    }
-
-    //Para evitar escribir dos espacios vacíos seguidos, la variable auxiliar almacena el caracter anterior.
-    aux = c;
+    int c;
 
     //Recorro el texto con un while y voy leyendo los caracteres.
     while((c = getchar()) != EOF) {
         
-        //si el caracter anterior es un espacio y el caracter actual no lo es, imprime el espacio y el caracter
-        if ( c != ' ' && aux == ' ') {
-
-            putchar(aux);
-            putchar(c);
+        //Analizo cada caso e imprimo el caracter de control
+        switch(c) {            
+            //tabulacion
+            case '\t': 
+                {
+                    printf("\\t");
+                    break;
+                }
+            //backspace
+            case '\b': 
+                {
+                    printf("\\b");
+                    break;
+                }
+            //backslash
+            case '\\':
+                {
+                    printf("\\\\");
+                    break;
+                }
+            default:
+                    putchar(c);
         }
-
-        //si el caracter anterior anterior no es un espacio, solo imprime el caracter actual
-        if ( c != ' ' && aux != ' ') {
-            putchar(c);
-        }
-        
-        aux = c;    
     }
 }
