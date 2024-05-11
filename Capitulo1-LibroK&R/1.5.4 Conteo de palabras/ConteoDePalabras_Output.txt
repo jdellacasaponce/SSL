@@ -1,0 +1,2 @@
+La cantidad de Líneas leidas son: 39, La cantidad de palabras son: 1651 y la cantidad de caracteres: 9633
+La cantidad de palabras leídas con el comando wc son:  1651

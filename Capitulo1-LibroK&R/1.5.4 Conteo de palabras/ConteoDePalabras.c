@@ -29,5 +29,5 @@ int main()
         }        
     }
 
-    printf("%d %d %d\n", nl, nw, nc);
+    printf("La cantidad de Líneas leidas son: %d, La cantidad de palabras son: %d y la cantidad de caracteres: %d\n", nl, nw, nc);
 }
