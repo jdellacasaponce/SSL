@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/* Copia la entrada a la salida; 3° Versión : Se le pasa el archivo: "ArchivoDeLectura"
- por linea de comandos para que el programa procese sus caracteres ( cat ArchivoDeLectura | ./CopiaDeArchivos.out )
- y se guarda la salida en el archivo CopiaDeArchivos_Output.txt */
-
 int main()
 {
     int c;
