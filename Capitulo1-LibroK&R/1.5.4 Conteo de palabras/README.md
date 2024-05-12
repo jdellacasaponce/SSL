@@ -18,7 +18,7 @@ _Los cambios realizados para este ejercicio se pueden observar accediendo a este
 
 ## Ejercicio 1.12
 
-_Los cambios realizados para este ejercicio se pueden observar accediendo a este [commit]()_
+_Los cambios realizados para este ejercicio se pueden observar accediendo a este [commit](https://github.com/jdellacasaponce/SSL/commit/d32b11e6e334797aeda4e68a51aae03763d62cb1)_
 
 > Para este ejercicio sólo tube que realizar la recorrida del archivo con un while, cuando la getchar() me traía un espacio, una nueva linea o una tabulación indicando que se terminó la palabra, escribo una nueva linea. Si no es ninguno de esos caracteres, escribo el char tal cual lo leo:
 
