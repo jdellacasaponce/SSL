@@ -6,5 +6,3 @@
 ./ConteoDePalabras.out < ArchivoDeLectura > ConteoDePalabras_Output.txt
 
 #Luego comparo la salida con la funcion de word count (wc -w) que poseo en Linux.
-
-echo "La cantidad de palabras leídas con el comando wc son: " $(wc -w < ArchivoDeLectura) >> ConteoDePalabras_Output.txt

@@ -7,27 +7,17 @@
 
 int main()
 {
-    int c, nl, nw, nc, state;
-
-    state = OUT;
-    nl = nw = nc = 0;
+    int state, c;
 
     while ((c = getchar()) != EOF) {
-        
-        ++nc;
-        
-        if (c == '\n') {
-            ++nl;
-        };
-
+                
         if (c == ' ' || c == '\n' || c == '\t') {
-            state = OUT;
+            putchar('\n');
         }
-        else if (state == OUT) {
-            state = IN;
-            ++nw;
+        else if (c != ' ' || c != '\n' || c != '\t') {
+            putchar(c);
         }        
     }
 
-    printf("La cantidad de Líneas leidas son: %d, La cantidad de palabras son: %d y la cantidad de caracteres: %d\n", nl, nw, nc);
+    putchar('\n');
 }
