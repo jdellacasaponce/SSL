@@ -1,3 +1,5 @@
-La cantidad de caracteres de nueva línea son: 8 
-Los espacio en blanco son: 6 
-La cantidad de caracteres de tabulación son: 3 
+Oracion1
+Oracion2
+Oracion3
+Oracion4
+Oracion5 Oracion6 Oracion7
