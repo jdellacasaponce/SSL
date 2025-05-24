@@ -1,6 +1,1 @@
-  1
-  1
-  1
-  1
-  1
-La expresion retorna 1 siemre
+El valor de EOF es: -1
