@@ -2,11 +2,13 @@
 
 all: test clean
 
-test: validar
-	echo "El valor de EOF es:" $$(echo "c" | ./validar ) > output.txt ;
+test: contarCaracter
+	@echo "Procesando el texto de prueba.... 📃 "
+	@cat ./textoDePrueba | ./contarCaracter > output.txt ;
+	@echo "Se contaron los caracteres buscados en el texto de prueba, puede observar el resultado en 'output.txt'✅"
 
-validar: validar.c
-	gcc validar.c -o validar
+contarCaracter: contarCaracter.c
+	@gcc contarCaracter.c -o contarCaracter
 
 clean:
-	rm -f validar
+	@rm -f contarCaracter
