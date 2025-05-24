@@ -1,8 +1,3 @@
-Oracion\\1
-
-Oracion\\2
-
-\t\tOracion\\3
-Oracion\\4
-
-\tOracion\\5 Oracion\\6 Oracion\\7
+La cantidad de caracteres es: 3023 
+La cantidad de líneas es: 11 
+La cantidad de palabras es: 441 
