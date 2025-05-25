@@ -39,3 +39,21 @@ void imprimirHistograma(int array[], char *categorias[], int tamaño) {
     printf("%s%s%s", "  ", categorias[i], "  ");
   }
 }
+
+float celciusAFarenheit(float celsius) {
+
+  float fahr;
+
+  fahr = ((9.0 / 5.0) * celsius) + 32.0;
+
+  return fahr;
+}
+
+float farenheitACelcius(float fahr) {
+
+  float celsius;
+
+  celsius = (fahr - 32.0) * (5.0 / 9.0);
+
+  return celsius;
+}
