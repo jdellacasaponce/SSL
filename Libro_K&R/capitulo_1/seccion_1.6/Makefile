@@ -2,13 +2,13 @@
 
 all: test clean
 
-test: contarLongitudes
+test: contarLetras
 	@echo "Procesando el texto de prueba.... 📃 "
-	@cat ./textoDePrueba | ./contarLongitudes > output ;
+	@cat ./textoDePrueba | ./contarLetras > output ;
 	@echo "Se contaron las ocurrencias buscadas, puede observar el resultado en 'output.txt'✅"
 
-contarLongitudes: contarLongitudes.c
-	@gcc contarLongitudes.c -o contarLongitudes
+contarLetras: contarLetras.c
+	@gcc contarLetras.c ../../biblioteca/biblioteca.c -o contarLetras
 
 clean:
-	@rm -f contarLongitudes
+	@rm -f contarLetras
