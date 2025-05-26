@@ -57,3 +57,26 @@ float farenheitACelcius(float fahr) {
 
   return celsius;
 }
+
+int getlinea(char s[], int lim) {
+  int c, i, m;
+  m = i = 0;
+  for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i) {
+    s[i] = c;
+  }
+  if (i == lim - 1) {
+    s[i] = c;
+  } else {
+    s[i] = '\0';
+  }
+  return i;
+}
+
+void copy(char to[], char from[]) {
+  int i;
+
+  i = 0;
+  while ((to[i] = from[i]) != '\0') {
+    ++i;
+  }
+}

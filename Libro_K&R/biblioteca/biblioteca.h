@@ -8,4 +8,7 @@ float celciusAFarenheit(float celsius);
 
 float farenheitACelcius(float fahr);
 
+int getlinea(char line[], int maxline);
+
+void copy(char to[], char from[]);
 #endif
